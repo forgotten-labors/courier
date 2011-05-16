@@ -6,14 +6,19 @@ keywords: ['courier']
 
 version: require('fs').readFileSync('./VERSION', 'utf8')
 
-author: 'Feisty Studios <courier@feistystudios.com> (http://feistystudios.com/)'
+author: 'feisty <courier@feisty.co> (http://feisty.co)'
 
 licenses: [
   type: 'FEISTY'
   url: 'http://github.com/feisty/license/raw/master/LICENSE'
 ]
 
-contributors: ['Nicholas Kinsey <nicholas.kinsey@feistystudios.com>']
+contributors: [
+  'Nicholas Kinsey <pyro@feisty.co>'
+  'Isaac Z. Schlueter <i@izs.me>'
+  'Mathieu Ravaux <mathieu.ravaux@gmail.com>'
+  'Jacob Evans <jacob@dekz.net>'
+]
 
 repository:
   type: 'git'
@@ -27,13 +32,15 @@ bugs:
 
 bin:
   courier: './bin/courier'
-  
+
 main: 'courier'
-  
+
 dependencies:
-  'coffee-script': '>= 1.0.1 < 1.1.0'
-  'optimist': '>= 0.1.1'
-  
+  'coffee-script': '>= 1.1.1 < 1.2.0'
+  optimist: '>= 0.2.0 < 0.3.0'
+
 engines:
-  node: '>= 0.4.2 < 1.0.0'
-  npm: '>= 0.3.15 < 1.5.0'
+  node: '>= 0.4.7 < 0.5.0'
+  npm: '>= 1.0.6 < 1.1.0'
+
+preferGlobal: true

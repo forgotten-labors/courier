@@ -12,7 +12,10 @@ Compiling a package.coffee file to a package.json isn't as simple as it seems.
 Since CoffeeScript wraps objects in order to make them assignable statements. courier will love and hold you through the night. Oh and it will cleanup the generated JavaScript to keep npm happy ^w^
 
 # Installation
-    npm install courier
+    npm -g install courier
+
+### Why a global install?
+Just because.
   
 # Usage
 Using courier couldn't be simpler.
