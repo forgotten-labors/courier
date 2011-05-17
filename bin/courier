@@ -4,26 +4,15 @@ path          = require 'path'
 {spawn, exec} = require 'child_process'
 
 # npm
-CoffeeScript = require 'coffee-script'
-# {OptionParser} = require 'coffee-script/lib/optparse'
+CoffeeScript = require '../node_modules/coffee-script'
+optimist = require('../node_modules/optimist')
 
 usage = '''
   Usage:
     courier [OPTIONS] [PATH_TO_APP = "."]
 '''
 
-switches = [
-  ['-h', '--help', 'Displays this snazzy help message']
-  
-  ['-v', '--version', 'Display courier version']
-  
-  ['-p', '--print', 'Prints the result to stdout.']
-  ['-s', '--silent', 'Shh. Do not print anything to stdout.']
-]
-
-argv = require('optimist')
-    .usage(usage)
-    .argv
+argv = optimist.usage(usage).argv
 
 if argv.v || argv.version
   console.log fs.readFileSync './VERSION', 'utf8'
