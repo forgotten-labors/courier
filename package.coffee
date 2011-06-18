@@ -36,11 +36,11 @@ bin:
 main: 'courier'
 
 dependencies:
-  'coffee-script': '>= 1.1.1 < 1.2.0'
-  optimist: '>= 0.2.0 < 0.3.0'
+  'coffee-script': '>= 1.1.1 < 1.2'
+  optimist: '>= 0.2.4 < 0.3'
 
 engines:
-  node: '>= 0.4.7 < 0.5.0'
-  npm: '>= 1.0.6 < 1.1.0'
+  node: '>= 0.4.7 < 0.5'
+  npm: '>= 1.0.13 < 1.1'
 
 preferGlobal: true
