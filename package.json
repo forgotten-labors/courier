@@ -4,7 +4,7 @@
   "keywords": [
     "courier"
   ],
-  "version": "0.6.0",
+  "version": "0.6.0-1",
   "author": "feisty <courier@feisty.co> (http://feisty.co)",
   "licenses": [
     {
@@ -27,7 +27,7 @@
   },
   "bugs": {
     "mail": "forlab-public@mouseed.com",
-    "web": "https://github.com/forgotten-labors/courier"
+    "url": "https://github.com/forgotten-labors/courier"
   },
   "bin": {
     "courier": "./bin/courier"
