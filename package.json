@@ -1,5 +1,5 @@
 {
-  "name": "courier",
+  "name": "fl-courier",
   "description": "package.coffee -> package.json (dynamic npm packages in CoffeeScript)",
   "keywords": [
     "courier"
@@ -16,29 +16,30 @@
     "Nicholas Kinsey <pyro@feisty.co>",
     "Isaac Z. Schlueter <i@izs.me>",
     "Mathieu Ravaux <mathieu.ravaux@gmail.com>",
-    "Jacob Evans <jacob@dekz.net>"
+    "Jacob Evans <jacob@dekz.net>",
+    "Forgotten Labors Initiative <forlab-public@mouseed.com> (https://github.com/forgotten-labors)"
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/feisty/courier.git",
-    "private": "git@github.com:feisty/courier.git",
-    "web": "http://github.com/feisty/courier"
+    "url": "https://github.com/forgotten-labors/courier.git",
+    "private": "git@github.com:forgotten-labors/courier.git",
+    "web": "https://github.com/forgotten-labors/courier"
   },
   "bugs": {
-    "mail": "courier@feistystudios.com",
-    "web": "http://github.com/feisty/courier/issues"
+    "mail": "forlab-public@mouseed.com",
+    "web": "https://github.com/forgotten-labors/courier"
   },
   "bin": {
     "courier": "./bin/courier"
   },
   "main": "courier",
   "dependencies": {
-    "coffee-script": ">= 1.1.1 < 1.2",
+    "coffee-script": ">= 1.1.1 <=1.2",
     "optimist": ">= 0.2.4 < 0.3"
   },
   "engines": {
     "node": ">= 0.4.9 < 0.5",
-    "npm": ">= 1.0.15 < 1.1"
+    "npm": "1"
   },
   "preferGlobal": true
 }
