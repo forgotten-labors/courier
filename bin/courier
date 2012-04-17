@@ -22,13 +22,9 @@ fs.readFile 'package.coffee', 'utf8', (error, coffee) ->
     console.log "error: #{error}"
     process.exit -1
 
-  console.log coffee
-
   js = CoffeeScript.compile "return {
     #{coffee}
   }"
-
-  console.log js
 
   json = JSON.stringify eval(js), null, 2
 
