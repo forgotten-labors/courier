@@ -1,6 +1,6 @@
 name: 'courier'
 
-description: 'package.coffee -> package.json (dynamic npm packages in CoffeeScript)'
+description: 'npm packages in CoffeeScript (package.coffee -> package.json)'
 
 keywords: ['courier']
 
@@ -27,7 +27,7 @@ repository:
   web: 'http://github.com/feisty/courier'
 
 bugs:
-  mail: 'courier@feistystudios.com'
+  mail: 'courier@feisty.co'
   web: 'http://github.com/feisty/courier/issues'
 
 bin:
@@ -36,11 +36,11 @@ bin:
 main: 'courier'
 
 dependencies:
-  'coffee-script': '>= 1.1.1 < 1.2'
-  optimist: '>= 0.2.4 < 0.3'
+  'coffee-script': '~1.3.1'
+  optimist: '~0.3'
 
 engines:
-  node: '>= 0.4.9 < 0.5'
-  npm: '>= 1.0.15 < 1.1'
+  node: '~0.6'
+  npm: '~1.1'
 
 preferGlobal: true

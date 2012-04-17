@@ -5,23 +5,31 @@ path          = require 'path'
 
 # npm
 CoffeeScript = require '../node_modules/coffee-script'
-optimist = require('../node_modules/optimist')
+optimist = require '../node_modules/optimist'
 
-usage = '''
-  Usage:
-    courier [OPTIONS] [PATH_TO_APP = "."]
-'''
+argv = optimist
+  .usage("npm packages in CoffeeScript (package.coffee -> package.json)")
+  .alias('v', 'version')
+  .describe('v', 'Print version')
+  .argv
 
-argv = optimist.usage(usage).argv
-
-if argv.v || argv.version
+if argv.v or argv.version
   console.log fs.readFileSync './VERSION', 'utf8'
   process.exit 0
 
 fs.readFile 'package.coffee', 'utf8', (error, coffee) ->
-  throw error if error
+  if error
+    console.log "error: #{error}"
+    process.exit -1
 
-  js = CoffeeScript.compile "return #{coffee}"
+  console.log coffee
+
+  js = CoffeeScript.compile "return {
+    #{coffee}
+  }"
+
+  console.log js
+
   json = JSON.stringify eval(js), null, 2
 
   fs.writeFile 'package.json', json, ->
