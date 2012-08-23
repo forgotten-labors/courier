@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/forgotten-labors/courier.png)](http://travis-ci.org/forgotten-labors/courier)
 	                          ______            
 	________________  ___________/_/____________
 	_  ___/  __ \  / / /_  ___/_  /_  _ \_  ___/
