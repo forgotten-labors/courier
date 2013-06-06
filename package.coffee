@@ -2,11 +2,11 @@ name: 'courier'
 
 description: 'npm packages in CoffeeScript (package.coffee -> package.json)'
 
-keywords: ['courier']
+keywords: ['courier', 'coffee', 'npm', 'package', 'json']
 
-version: require('fs').readFileSync('./VERSION', 'utf8')
+version: (require 'fs').readFileSync './VERSION', 'utf8'
 
-author: 'feisty <courier@feisty.co> (http://feisty.co)'
+author: 'feisty <courier@feisty.io> (http://feisty.io)'
 
 licenses: [
   type: 'FEISTY'
@@ -14,7 +14,7 @@ licenses: [
 ]
 
 contributors: [
-  'Nicholas Kinsey <pyro@feisty.co>'
+  'Nicholas Kinsey <pyro@feisty.io>'
   'Isaac Z. Schlueter <i@izs.me>'
   'Mathieu Ravaux <mathieu.ravaux@gmail.com>'
   'Jacob Evans <jacob@dekz.net>'
@@ -27,20 +27,20 @@ repository:
   web: 'http://github.com/feisty/courier'
 
 bugs:
-  mail: 'courier@feisty.co'
+  mail: 'courier@feisty.io'
   web: 'http://github.com/feisty/courier/issues'
 
-bin:
-  courier: './bin/courier'
+bin: './bin/courier'
 
-main: 'courier'
+main: 'courier.coffee'
 
 dependencies:
-  'coffee-script': '~1.3.1'
-  optimist: '~0.3'
+  'coffee-script': '~1.6.3'
+  optimist: '~0.5.2'
+  pkginfo: '~0.3.0'
 
 engines:
-  node: '~0.6'
-  npm: '~1.1'
+  node: '~0.10.10'
+  npm: '~1.2.25'
 
 preferGlobal: true

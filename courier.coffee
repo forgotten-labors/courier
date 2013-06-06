@@ -1,1 +1,1 @@
-modules.exports = VERSION: ((require 'fs').readFileSync './VERSION', 'utf8')
+module.exports = (require 'pkginfo') module
